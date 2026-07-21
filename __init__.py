@@ -9,11 +9,3 @@ __all__ = [
     "check_url_risk",
     "parse_failed_logins",
 ]
-
-On Linux/macOS:
-Bash
-touch checks/__init__.py
-
-On Windows (PowerShell):
-PowerShell
-New-Item -Path checks/__init__.py -ItemType File
