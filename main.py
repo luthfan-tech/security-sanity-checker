@@ -1,8 +1,14 @@
 import argparse
-import json
 import csv
+import json
 import sys
-from checks import check_password_strength, scan_file_for_secrets, check_url_risk, parse_failed_logins
+
+from checks import (
+    check_password_strength,
+    parse_failed_logins,
+    scan_file_for_secrets,
+    check_url_risk,
+)
 
 def export_results(data: list, fmt: str, output_file: str = None):
     if fmt == "json":
